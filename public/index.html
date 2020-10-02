@@ -24,20 +24,46 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React Redux App</title>
+    <title>React-Rest-Countries-API</title>
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <body>    
+    <div id="root"></div>    
+    <div class="wrapper">
+      <!--Navigation-->
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <p>Where in the world</p>
+          </li>
+          <li>
+            <p><img class="" src="icons8-moon-symbol-50.png">Dark Mode</p>
+          </li>
+        </ul>
+      </nav>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      <section>
+        <div>
+          <input type="text" id="countrysearch" name="countrysearch" form="form1" placeholder="Search for a country..">
+        </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        <div>
+          <form>
+            <select name="countrieselect" id="countrieselect">
+            </select>
+          </form>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <img src="Germany.png">          
+          <h4>Germany</h4>
+          <p>Population: 81,770,900</p>
+          <p>Region: Europe</p>
+          <p>Capital: Berlin</p>          
+        </div>
+      </section>
+    </div>
+    
   </body>
 </html>
