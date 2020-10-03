@@ -1,4 +1,4 @@
-body {
+/*body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,21 +11,136 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+*/
 
 
 /******************/
+:root{
+  --light: hsl(0, 0%, 100%);
+  --light-grey: hsl(0, 0%, 98%);
+  --dark: #333;
+  --shadow: 0px 1px 2px rgba(104,104,104,0.8);
+  --genmargin: 0px 50px 0px 50px;
+  
+}
+
+html{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+}
+
+body{
+  /*margin: 20px 50px 0px 50px;*/
+  margin: 0;
+  background-color: var(--light-grey);
+}
+
+img{
+  max-width: 100%;
+}
+
+.wrapper{
+  display: grid;
+  grid-gap: 20px;
+}
 
 
+/*Navigation*/
+.main-nav{
+  background-color: var(--light);
+  box-shadow: 10px 0px 2px rgba(104,104,104,0.8);
+  
+}
+.main-nav ul{
+  display: grid;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(2,1fr);
+  margin: var(--genmargin);
+}
+
+.nav-darkmode{
+  justify-self: end;
+  
+}
+
+.moon{
+  width: 1rem;
+  padding-right:0.3rem;
+}
 
 
+/********Search Bars*********/
+.searchbars{
+  margin: var(--genmargin);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 20px;
+}
+
+#countrysearch{
+  
+  width: 60%;
+  height: 2rem;
+  padding: 8px 0px 8px 5rem;
+  border-style: none;
+  box-shadow: var(--shadow);
+  position: relative;
+  
+}
 
 
+.searchbutton{
+  height: 2rem;
+  position: absolute;
+  left: 4rem;
+  width: 3rem;
+  background-color: var(--light);
+  border: none;
+}
 
+.search{  
+  width: 1.5rem;
+  margin-top: 0.7rem;
+}
 
+.countrieselect{
+  justify-self: end;
+}
 
+#countrieselect{
+  padding: 15px 40px 15px 15px;
+  border: none;
+  box-shadow: var(--shadow)
+}
 
+/**************countrycards***********/
+.cards{
+  display: grid;
+  
+}
 
+.card{
+  margin: var(--genmargin);
+  background-color: var(--light);
+  width: 16rem; 
+  padding-bottom: 1.5rem;
+  
+}
+
+.card img{
+  width: 100%;
+  height: 200px;
+}
+
+.card-content{
+  padding-left: 1rem;
+}
+
+.card-content p {
+  font-size: 0.8rem;
+}
 
 
 

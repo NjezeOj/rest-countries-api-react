@@ -5,6 +5,7 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -27,43 +28,99 @@
     <title>React-Rest-Countries-API</title>
   </head>
   <body>    
-    <div id="root"></div>    
+    <div id="root"></div> 
+       
     <div class="wrapper">
       <!--Navigation-->
       <nav class="main-nav">
         <ul>
           <li>
-            <p>Where in the world</p>
+            <h2>Where in the world?</h2>
           </li>
-          <li>
-            <p><img class="" src="icons8-moon-symbol-50.png">Dark Mode</p>
+          <li class="nav-darkmode">
+            <h4><img class="icons moon" src="icons8-moon-symbol-50.png">Dark Mode</h4>
           </li>
         </ul>
       </nav>
 
-      <section>
-        <div>
-          <input type="text" id="countrysearch" name="countrysearch" form="form1" placeholder="Search for a country..">
-        </div>
+      
+      
 
-        <div>
+      
+      <section class="searchbars">
+        <div class="searchbar">
+          <input type="text" id="countrysearch" name="countrysearch" form="form1" placeholder="Search for a country..">
+          <button type="submit" class="searchbutton">
+            <img class="search" src="magnifying.png">
+          </button>
+        </div>
+          
+              
+        <div class="countrieselect">
           <form>
             <select name="countrieselect" id="countrieselect">
+              <option value="region">Filter by Region</option>
             </select>
           </form>
         </div>
       </section>
+     
+      
 
-      <section>
-        <div>
-          <img src="Germany.png">          
-          <h4>Germany</h4>
-          <p>Population: 81,770,900</p>
-          <p>Region: Europe</p>
-          <p>Capital: Berlin</p>          
+      <section class="cards">
+        <div class="card">
+          <img src="Germany.png">    
+          <div class="card-content">
+            <h2>Germany</h2>
+            <p><b>Population:</b> 81,770,900</p>
+            <p><b>Region:</b> Europe</p>
+            <p><b>Capital:</b> Berlin</p>
+          </div>                        
         </div>
+
+        <div class="card">
+          <img src="Germany.png">
+          <div class="card-content">
+            <h2>Germany</h2>
+            <p><b>Population:</b> 81,770,900</p>
+            <p><b>Region:</b> Europe</p>
+            <p><b>Capital:</b> Berlin</p>
+          </div>
+        </div>
+                
+                <div class="card">
+                  <img src="Germany.png">
+                  <div class="card-content">
+                    <h2>Germany</h2>
+                    <p><b>Population:</b> 81,770,900</p>
+                    <p><b>Region:</b> Europe</p>
+                    <p><b>Capital:</b> Berlin</p>
+                  </div>
+                </div>
+
+                        <div class="card">
+                          <img src="Germany.png">
+                          <div class="card-content">
+                            <h2>Germany</h2>
+                            <p><b>Population:</b> 81,770,900</p>
+                            <p><b>Region:</b> Europe</p>
+                            <p><b>Capital:</b> Berlin</p>
+                          </div>
+                        </div>
+
+                                <div class="card">
+                                  <img src="Germany.png">
+                                  <div class="card-content">
+                                    <h2>Germany</h2>
+                                    <p><b>Population:</b> 81,770,900</p>
+                                    <p><b>Region:</b> Europe</p>
+                                    <p><b>Capital:</b> Berlin</p>
+                                  </div>
+                                </div>
+                
       </section>
     </div>
+    
     
   </body>
 </html>
