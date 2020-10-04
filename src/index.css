@@ -20,7 +20,7 @@ code {
   --light-grey: hsl(0, 0%, 98%);
   --dark: #333;
   --shadow: 0px 1px 2px rgba(104,104,104,0.8);
-  --genmargin: 0px 50px 0px 50px;
+  --genmargin: 10px 50px 10px 50px;
   
 }
 
@@ -62,12 +62,20 @@ img{
 
 .nav-darkmode{
   justify-self: end;
-  
+  align-self: center;  
+}
+
+.nav-darkmode button{
+  position: relative;
+  background-color: white;
+  border: none;
 }
 
 .moon{
-  width: 1rem;
-  padding-right:0.3rem;
+  width: 1.5rem;
+  position: absolute;
+  left: -2rem;
+  margin-top: -1.3rem;
 }
 
 
@@ -76,7 +84,7 @@ img{
   margin: var(--genmargin);
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  margin-top: 20px;
+  /*margin-top: 0px;*/
 }
 
 #countrysearch{
@@ -118,15 +126,16 @@ img{
 /**************countrycards***********/
 .cards{
   display: grid;
-  
+  grid-template-columns: repeat(4, 1fr);
+  margin: var(--genmargin);
+  gap: 70px;
 }
 
 .card{
-  margin: var(--genmargin);
-  background-color: var(--light);
-  width: 16rem; 
-  padding-bottom: 1.5rem;
   
+  background-color: var(--light);
+  padding-bottom: 1.5rem;
+  box-shadow: var(--shadow);
 }
 
 .card img{
@@ -134,11 +143,12 @@ img{
   height: 200px;
 }
 
-.card-content{
+
+.card h2, p{
   padding-left: 1rem;
 }
 
-.card-content p {
+.card p {
   font-size: 0.8rem;
 }
 
