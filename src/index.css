@@ -59,6 +59,7 @@ img{
   list-style: none;
   grid-template-columns: repeat(2,1fr);
   margin: var(--genmargin);
+  margin-top: 0px;
 }
 
 .nav-darkmode{
