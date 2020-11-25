@@ -1,13 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
+import {Navbar} from './app/Navbar'
+import Search from './app/Search'
+
 
 function App() {
   return (
-    <div>
+    <div className="wrapper">
+      <Navbar />
+      <Search />
       
     </div>
+    
+    
+    
   );
 }
 
